@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Inter;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navCon{
+  height: 10vh;
+  background-color: rgb(255, 76, 76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logoCon{
+  display: flex;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoImg{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+
+.logoText{
+  color: white;
+  margin-left: 5px;
+}
+
+.cardCon{
+  width: 100%;
+}
+
+.card{
+  height: 40vw;
+  margin: 40px 80px;
+  display: flex;
+}
+
+.left{
+  width: 30%;
+  height: 100%;
+}
+
+.right {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftInner{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftInner img{
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rightInner {
+  height: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 50px 50px 50px;
+}
+
+.marker{
+  height: 20px;
+  width: 20px;
+  object-fit:contain;
+}
+
+.div1{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.div1 span{
+  color: rgb(70, 70, 70);
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.div1 a{
+  color: gray;
+  font-size: 14px;
+  margin-left: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.div1 a::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top:120%;
+  left:0%;
+  background-color: gray;
+}
+
+.div2{
+  font-size: 40px;
+}
+
+.div3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.div4{
+  color: gray;
 }
